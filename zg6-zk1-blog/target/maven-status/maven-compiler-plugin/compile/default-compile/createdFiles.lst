@@ -1,0 +1,10 @@
+com\wjs\BlogApplication.class
+com\wjs\Vo\BlogVo.class
+com\wjs\service\impl\BlogServiceImpl.class
+com\wjs\param\BlogParam.class
+com\wjs\repository\BlogRepository.class
+com\wjs\entity\BlogEntity.class
+com\wjs\mapper\BlogMapper.class
+com\wjs\config\BlogConfig.class
+com\wjs\controller\BlogController.class
+com\wjs\service\BlogService.class

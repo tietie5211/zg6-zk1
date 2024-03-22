@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--接口名-->
+<mapper namespace="com.wjs.mapper.BlogMapper"><!-- 命名空间 -->
+
+
+    <update id="updateUpvote">
+       update blog set upvote_num=#{num} where blog_id = #{id}
+    </update>
+    <select id="selectTitle" resultType="com.wjs.pojo.Blog">
+        select * from blog where title = #{title}
+limit 1
+    </select>
+    <select id="selectListByTime" resultType="com.wjs.pojo.Blog" parameterType="long">
+        select * from blog where <![CDATA[
+        update_time >= #{last}
+        ]]>
+
+    </select>
+
+</mapper>

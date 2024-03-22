@@ -1,0 +1,6 @@
+com\wjs\UserApplication.class
+com\wjs\Vo\UserVo.class
+com\wjs\service\UserService.class
+com\wjs\controller\UserController.class
+com\wjs\service\impl\UserServiceImpl.class
+com\wjs\mapper\UserMapper.class
